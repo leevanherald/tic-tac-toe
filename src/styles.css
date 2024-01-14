@@ -1,0 +1,123 @@
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #232634;
+}
+
+body {
+  position: absolute;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: 0;
+  padding: 40px;
+  background-color: #e4d5d5;
+}
+
+.title {
+  text-align: center;
+  color: #1e90ff;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s;
+}
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.game-component {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: blue;
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 24px;
+  background-color: #8fb594;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #cdb635;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 34px;
+  text-align: center;
+  color: red;
+}
+
+.step {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1e90ff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.step:hover {
+  color: #004080;
+}
+
+ol {
+  font-size: 16px;
+  color: blue;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.winner {
+  color: rgb(255, 255, 255);
+  background-color: #1e90ff;
+}
